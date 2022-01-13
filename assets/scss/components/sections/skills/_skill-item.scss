@@ -23,12 +23,13 @@
   }
 
   &__title {
-    font-family: $font-main;
     z-index: 1;
 
     margin: 0;
 
     letter-spacing: 0.1em;
+
+    font-family: $font-main;
 
     @include abs-position;
     @include lg-min {

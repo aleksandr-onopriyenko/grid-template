@@ -2,16 +2,17 @@
 @use "../../mixins" as *;
 
 .footer {
-  padding: 50px 0;
   width: 100%;
   height: 252.78px;
+  padding: 50px 0;
+
   background-color: $color-primary;
 
   &__container {
-    @extend %container;
-
     display: grid;
     justify-content: center;
+
+    @extend %container;
     justify-items: center;
   }
 
@@ -19,32 +20,38 @@
     position: relative;
 
     &:before {
-      content: "";
-      display: block;
-      height: 2px;
-      width: 75px;
-      background-color: rgba($color-gray-light, 0.1);
-
       position: absolute;
       bottom: -20px;
       left: 50%;
 
+      display: block;
+
+      width: 75px;
+      height: 2px;
+
+      content: "";
       transform: translateX(-50%);
+
+      background-color: rgba($color-gray-light, 0.1);
     }
   }
 
   &__copy {
     margin-right: -8px;
+
     color: $color-gray-light;
 
     span {
-      font-weight: bold;
       letter-spacing: 0.05em;
 
+      font-weight: bold;
+
       &:first-child {
-        font-weight: 100;
-        color: rgba($color-gray-light, 0.28);
         letter-spacing: 0.33em;
+
+        color: rgba($color-gray-light, 0.28);
+
+        font-weight: 100;
       }
     }
   }
