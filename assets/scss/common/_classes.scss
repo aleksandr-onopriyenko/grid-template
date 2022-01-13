@@ -92,3 +92,33 @@
   display: flex;
   justify-content: center;
 }
+
+.socials {
+  @include unlist;
+  display: grid;
+  gap: 1.8px;
+  justify-content: center;
+  justify-items: center;
+  grid-template-columns: repeat(5, 50px);
+  margin-bottom: 40px;
+  &__item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    &-link {
+      display: block;
+      text-decoration: none;
+      padding: 10px;
+
+      transition: color 0.5s;
+
+      &:hover {
+        color: $color-accent;
+      }
+
+      .fab {
+        font-size: 2.25rem;
+      }
+    }
+  }
+}
