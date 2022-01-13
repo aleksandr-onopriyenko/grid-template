@@ -44,7 +44,8 @@
     }
 
     &-text {
-      color: #637588;
+      margin-top: -5px;
+      color: $color-gray;
 
       position: relative;
 
@@ -53,7 +54,7 @@
         display: block;
         width: 2px;
         height: 200px;
-        background-color: rgba(99, 117, 136, 0.1);
+        background-color: rgba($color-gray, 0.1);
 
         position: absolute;
         top: 0;
