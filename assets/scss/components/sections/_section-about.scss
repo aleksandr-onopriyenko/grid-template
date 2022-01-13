@@ -1,0 +1,96 @@
+@use "../../presets" as *;
+@use "../../mixins" as *;
+
+.about {
+  letter-spacing: 0.055em;
+  padding: 100px 0;
+  background-color: #e5e5e5;
+
+  @include lg-md {
+    padding: 80px 0;
+  }
+
+  @include md {
+    padding: 60px 0;
+  }
+
+  &__container {
+    height: 100%;
+    display: grid;
+    grid-template-columns: 1fr 271px;
+    gap: 100px;
+
+    @extend %container;
+
+    @include lg-md {
+      grid-template-columns: 1fr 271px;
+      gap: 40px;
+    }
+
+    @include lg {
+      grid-template-columns: 1fr 236px;
+      gap: 20px;
+    }
+
+    @include sm {
+      grid-template-columns: 1fr;
+      gap: 20px;
+    }
+  }
+
+  &__content {
+    &-title {
+      margin-top: 0;
+    }
+
+    &-text {
+      color: #637588;
+
+      position: relative;
+
+      &:before {
+        content: "";
+        display: block;
+        width: 2px;
+        height: 200px;
+        background-color: rgba(99, 117, 136, 0.1);
+
+        position: absolute;
+        top: 0;
+        right: -50px;
+
+        @include lg {
+          right: -20px;
+        }
+
+        @include md {
+          right: -10px;
+        }
+
+        @include sm {
+          display: none;
+        }
+      }
+
+      p:last-child {
+        margin: 0;
+      }
+
+      @include lg-min {
+        font-size: 1.125rem;
+      }
+    }
+  }
+
+  &__image {
+    display: grid;
+    align-content: center;
+    justify-content: center;
+    position: relative;
+
+    img {
+      width: 100%;
+      max-height: 480px;
+    }
+  }
+}
