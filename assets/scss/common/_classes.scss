@@ -53,6 +53,25 @@
       width: 100%;
     }
   }
+
+  &--long {
+    background-color: rgba($color-light, 0.1);
+
+    border-width: 0 0 2px 0;
+    border-style: solid;
+    border-color: rgba($color-light, 0.3);
+
+    height: 60px;
+    width: 100%;
+    color: $color-light;
+
+    font-size: 1.125rem;
+
+    &:hover {
+      border-width: 2px;
+      border-color: $color-light;
+    }
+  }
 }
 
 .hidden {

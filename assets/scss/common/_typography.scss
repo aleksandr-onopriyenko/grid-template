@@ -16,6 +16,11 @@ html {
   font-size: $font-size;
 }
 
+button {
+  border: none;
+  cursor: pointer;
+}
+
 h1 {
   text-align: center;
   letter-spacing: 0.08em;
