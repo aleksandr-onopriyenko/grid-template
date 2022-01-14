@@ -35,9 +35,9 @@
     transition: color 0.5s, border-color 0.5s, background-color 0.5s;
     letter-spacing: 0.15em;
 
-    color: rgba($color-light, 0.51);
+    color: $color-light;
     border: 2px solid transparent;
-    border-bottom-color: rgba($color-light, 0.3);
+    border-bottom-color: rgba($color-light, 0.25);
     outline: none;
     background-color: rgba($color-light, 0.05);
 
@@ -45,26 +45,19 @@
 
     &::placeholder {
       transition: color 0.5s;
+
+      color: $color-gray;
     }
 
-    &:hover::placeholder {
-      color: rgba($color-light, 0.3);
-    }
-
+    &:hover::placeholder,
     &:focus-visible::placeholder {
-      color: rgba($color-light, 0.3);
+      color: lighten($color-gray, 15%);
     }
 
-    &:hover {
-      color: $color-light;
-      border-color: rgba($color-light, 0.1);
-      border-bottom-color: $color-light;
-      background: rgba($color-light, 0.15);
-    }
-
+    &:hover,
     &:focus-visible {
       color: $color-light;
-      border-color: rgba($color-light, 0.1);
+      border-color: rgba($color-light, 0.15);
       border-bottom-color: $color-light;
       background: rgba($color-light, 0.15);
     }
