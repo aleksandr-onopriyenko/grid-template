@@ -829,30 +829,30 @@ a {
   font-size: 1.125rem;
 }
 .form input::-webkit-input-placeholder {
-  color: #637588;
   -webkit-transition: color 0.5s;
   transition: color 0.5s;
+  color: #637588;
 }
 .form input::-moz-placeholder {
-  color: #637588;
   -moz-transition: color 0.5s;
   transition: color 0.5s;
+  color: #637588;
 }
 .form input:-ms-input-placeholder {
-  color: #637588;
   -ms-transition: color 0.5s;
   transition: color 0.5s;
+  color: #637588;
 }
 .form input::-ms-input-placeholder {
-  color: #637588;
   -ms-transition: color 0.5s;
   transition: color 0.5s;
+  color: #637588;
 }
 .form input::placeholder {
-  color: #637588;
   -webkit-transition: color 0.5s;
   -o-transition: color 0.5s;
   transition: color 0.5s;
+  color: #637588;
 }
 .form input:hover::-webkit-input-placeholder, .form input:focus-visible::-webkit-input-placeholder {
   color: #8c9bab;
